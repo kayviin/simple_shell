@@ -92,7 +92,7 @@ typedef struct builtin_s
 	int (*f)(data_shell *datash);
 } builtin_t;
 
-/* aux_lists1.c */
+/* aux_lists.c */
 sep_list *add_sep_node_end(sep_list **head, char sep);
 void free_sep_list(sep_list **head);
 line_list *add_line_node_end(line_list **head, char *line);
@@ -215,7 +215,7 @@ int get_error(data_shell *datash, int eval);
 /* get_sigint.c */
 void get_sigint(int sig);
 
-/* aux_help1.c */
+/* aux_help.c */
 void aux_help_env(void);
 void aux_help_setenv(void);
 void aux_help_unsetenv(void);
